@@ -4,7 +4,6 @@ import { auth } from "@/auth";
 import { repoSyncQueue } from "@/lib/queue";
 import { prisma } from "@/prisma";
 import { revalidatePath } from "next/cache";
-import { error } from "node:console";
 
 export async function addRepo(formData: FormData) {
   const session = await auth();
